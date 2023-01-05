@@ -1,0 +1,24 @@
+{
+	"name": "carstingaxion/cbstdsys-post-subtitle",
+	"description": "WordPress block to show and style a semantic subtitle.",
+    "homepage": "https://websites.fuer.figuren.theater",
+    "type": "wordpress-plugin",
+    "keywords": ["wordpress", "wordpress-plugin", "site-editor", "block", "subtitle"],
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Carsten Bach",
+            "email": "mail@carsten-bach.de",
+            "homepage": "https://carsten-bach.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/carstingaxion/cbstdsys-post-subtitle/issues",
+        "source": "https://github.com/carstingaxion/cbstdsys-post-subtitle"
+    },
+	"require": {
+        "php": ">=7.1",
+        "johnpbloch/wordpress": "^6.0"
+	}
+}
