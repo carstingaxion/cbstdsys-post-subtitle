@@ -1,0 +1,53 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "create-block/cbstdsys-post-subtitle",
+	"version": "0.1.0",
+	"title": "Subtitle",
+	"category": "text",
+	"icon": "paperclip",
+	"description": "Add a semantic subtitle.",
+	"usesContext": [ "postType", "postId"],
+	"attributes": {
+		"textAlign": {
+			"type": "string"
+		},
+		"level": {
+			"type": "number",
+			"default": 2
+		}
+	},
+	"supports": {
+		"align": true,
+		"color": {
+			"gradients": true,
+			"background": true,
+			"text": true,
+			"link": true
+		},
+		"spacing": {
+			"margin": true
+		},
+		"typography": {
+	        "fontSize": true,
+	        "lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true,
+				"fontAppearance": true,
+				"textTransform": true
+			}
+	    },
+    	"multiple": true,
+		"html": false,
+	    "reusable": false
+	},
+	"textdomain": "cbstdsys-post-subtitle",
+	"editorScript": "file:build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
