@@ -19,13 +19,17 @@ import { registerBlockType, createBlock } from '@wordpress/blocks';
  */
 import edit from './edit';
 import save from './save';
+import json from './../block.json';
+
+const {name, ...settings} = json;
 
 /**
  * Every block starts by registering a new block type definition.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType( 'create-block/cbstdsys-post-subtitle', {
+registerBlockType( name, {
+	...settings,
 	/**
 	 * @see ./edit.js
 	 */

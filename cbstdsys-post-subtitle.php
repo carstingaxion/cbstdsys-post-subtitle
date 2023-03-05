@@ -83,7 +83,8 @@ function cbstdsys_post_subtitle_block__init() {
 		dirname( \plugin_basename( __FILE__ ) ) . '/languages'
 	);
 
-	\register_block_type_from_metadata(
+	// \register_block_type_from_metadata(
+	\register_block_type(
 		__DIR__,
 		array(
 			'render_callback' => 'cbstdsys_post_subtitle_block__render',
